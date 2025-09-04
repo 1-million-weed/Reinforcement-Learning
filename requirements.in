@@ -1,0 +1,20 @@
+# --- Core scientific stack
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+
+# --- Jupyter
+ipykernel
+jupyterlab
+notebook
+
+# --- RL stack
+gymnasium
+# stable-baselines3
+
+# --- PyTorch stack (Apple Silicon uses MPS backend automatically)
+#torch
+#torchvision
+#torchaudio
