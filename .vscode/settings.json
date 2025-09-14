@@ -1,0 +1,28 @@
+{
+    // Use your container venv
+    "python.defaultInterpreterPath": "/home/coder/.venvs/rl-tuts/bin/python",
+    // Let BasedPyright handle IntelliSense; keep Python’s LS off
+    "python.languageServer": "None",
+    // BasedPyright (Pylance-like) settings
+    "basedpyright.analysis.typeCheckingMode": "basic",
+    "basedpyright.analysis.autoImportCompletions": true,
+    "basedpyright.analysis.useLibraryCodeForTypes": true,
+    // Ruff: format + fixes + import sorting on save
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    // Keep indexing snappy
+    "files.exclude": {
+        "**/.venv/**": true,
+        "**/__pycache__/**": true,
+        "**/node_modules/**": true,
+        "**/build/**": true,
+        "**/dist/**": true,
+        "**/.tox/**": true
+    }
+}

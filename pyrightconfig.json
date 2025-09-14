@@ -1,0 +1,25 @@
+{
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "**/.venv",
+    "**/.tox",
+    "**/__pycache__",
+    "**/node_modules",
+    "**/build",
+    "**/dist"
+  ],
+  "typeCheckingMode": "basic",
+  "useLibraryCodeForTypes": true,
+  "diagnosticSeverityOverrides": {
+    "reportMissingTypeStubs": "none",
+    "reportMissingTypeArgument": "warning",
+    "reportUnknownVariable": "warning"
+  },
+  "executionEnvironments": [
+    {
+      "root": "."
+    }
+  ]
+}
