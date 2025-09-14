@@ -12,11 +12,11 @@
   ],
   "typeCheckingMode": "basic",
   "useLibraryCodeForTypes": true,
-  "diagnosticSeverityOverrides": {
-    "reportMissingTypeStubs": "none",
-    "reportMissingTypeArgument": "warning",
-    "reportUnknownVariable": "warning"
-  },
+  // "diagnosticSeverityOverrides": {
+  //   "reportMissingTypeStubs": "none",
+  //   "reportMissingTypeArgument": "warning",
+  //   "reportUnknownVariable": "warning"
+  // },
   "executionEnvironments": [
     {
       "root": "."
