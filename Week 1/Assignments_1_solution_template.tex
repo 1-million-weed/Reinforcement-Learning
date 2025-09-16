@@ -1,0 +1,127 @@
+\documentclass[addpoints,10pt,answers]{exam}
+
+\usepackage{graphicx}      % To include images
+\usepackage{float}         % For better figure placement with [H]
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{xcolor}
+\usepackage[shortlabels]{enumitem}
+\usepackage{booktabs}
+\usepackage{caption}
+
+% Header configuration
+\pagestyle{head}\runningheadrule
+\newcommand{\course}{Reinforcement Learning (2025/2026)}
+\newcommand{\coursecode}{Course: Reinforcement Learning WBAI061-05}
+\newcommand{\lecturer}{Lecturer: Rafael F. Cunha, University of Groningen}
+\newcommand{\head}{Assignment \homework\ -- Solution}
+\firstpageheader{
+    \lecturer\newline
+    \coursecode\newline\newline
+    }{{\textbf{\head}}}{\today}
+\runningheader{\course}{{\textbf{\head}}}{Page \thepage\ of \numpages}
+
+% Information box for student details
+\newcommand{\studentinfo}{
+  \begin{center}
+    \fbox{\fbox{\parbox{0.8\linewidth}{
+      \centering
+      \textbf{Student Name:} \student \\
+      \textbf{Student Number:} \snumber
+    }}}
+  \end{center}
+  \vspace{1cm}
+}
+
+% Fill in your information here
+\newcommand{\student}{John Doe}
+\newcommand{\snumber}{s1234567}
+\newcommand{\homework}{1}
+
+% Document Start
+\begin{document}
+
+\studentinfo
+
+%-------------------------------------------------%
+% SECTION FOR PLOTS
+%-------------------------------------------------%
+\section*{Section 3: Required Plots}
+\hrule\vspace{1em}
+
+% --- EXAMPLE PLOT ---
+% This shows students exactly how to format their plots and captions.
+\subsection*{Example Plot Structure}
+
+\begin{figure}[H] % [H] places the figure exactly here
+    \centering
+    \includegraphics[width=0.8\textwidth]{example_plot.pdf}
+    \caption{
+    \textit{A good caption provides a complete story for the figure. It should start with a clear description of what is being plotted, followed by an interpretation of what the results show, and end with the key scientific takeaway.}
+    %\newline\newline
+    \textbf{Example:} This figure compares the average reward over 1000 time steps for three hypothetical algorithms, averaged over 200 runs. The shaded regions represent the standard error of the mean. We observe that Algorithm A learns fastest initially but plateaus at a suboptimal reward level. In contrast, Algorithm C learns slower but achieves the highest final performance. The key takeaway is that there is often a trade-off between initial learning speed and final asymptotic performance, and the optimal algorithm choice depends on the specific problem goals.
+}
+    \label{fig:example}
+\end{figure}
+
+% --- PLOTS FOR THE ASSIGNMENT ---
+% Students will replace the content below with their actual plots.
+
+\subsection*{Plot 1: \(\varepsilon\)-Greedy Comparison}
+% STUDENT: PLACE YOUR EPSILON-GREEDY PLOT HERE
+
+\subsection*{Plot 2: Optimistic Initialization Comparison}
+% STUDENT: PLACE YOUR OPTIMISTIC INIT PLOT HERE
+
+\subsection*{Plot 3: UCB Comparison}
+% STUDENT: PLACE YOUR UCB PLOT HERE
+
+\subsection*{Plot 4: Softmax Comparison}
+% STUDENT: PLACE YOUR SOFTMAX PLOT HERE
+
+\subsection*{Plot 5: Overall Comparison}
+% STUDENT: PLACE YOUR OVERALL COMPARISON PLOT HERE
+
+\clearpage
+
+%-------------------------------------------------%
+% SECTION FOR QUESTIONS
+%-------------------------------------------------%
+\section*{Section 4: Questions}
+\hrule\vspace{1em}
+
+% The 'questions' environment automatically numbers the questions.
+\begin{questions}
+
+    \question ($\varepsilon$-Greedy) How does increasing $\varepsilon$ affect exploration and long-term reward?
+    \begin{solution}
+        [STUDENT: Write your answer here, referring to Plot 1.]
+    \end{solution}
+
+    \question (Optimistic Initialization) How do larger initial $Q_0$ values influence early exploration?
+    \begin{solution}
+        [STUDENT: Write your answer here, referring to Plot 2.]
+    \end{solution}
+    
+    \question (UCB) How do small vs. large values of $c$ compare to $\varepsilon$-Greedy? Which $c$ gives the best balance?
+    \begin{solution}
+        [STUDENT: Write your answer here, referring to Plot 3.]
+    \end{solution}
+    
+    \question (Softmax) How does $\tau$ control the trade-off between greedy and exploratory actions?
+    \begin{solution}
+        [STUDENT: Write your answer here, referring to Plot 4.]
+    \end{solution}
+    
+    \question (Comparison) Which strategy performs best overall? Which one is most robust to parameter choice?
+    \begin{solution}
+        [STUDENT: Write your answer here, referring to Plot 5.]
+    \end{solution}
+
+    \question (Reflection) If you were faced with a new, unknown bandit problem, which method would you choose? Justify your choice by referring to both your experimental results and theoretical considerations.
+    \begin{solution}
+        [STUDENT: Write your reflection paragraph here.]
+    \end{solution}
+
+\end{questions}
+
+\end{document}
