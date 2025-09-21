@@ -1,6 +1,7 @@
 {
     // Use your container venv
-    "python.defaultInterpreterPath": "/home/coder/.venvs/rl-tuts/bin/python",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.rl-venv/bin/python",
+    "python.terminal.activateEnvironment": true,
     // Let BasedPyright handle IntelliSense; keep Python’s LS off
     "python.languageServer": "None",
     // BasedPyright (Pylance-like) settings
